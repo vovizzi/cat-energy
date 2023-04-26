@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+
+    &-left-div {
+        margin: 53px 0 0 110px;
+
+
+        h1 {
+            margin: 6.9375rem 0 0 19.32%;
+            @extend %Oswald-400;
+            font-size: 3.75rem;
+            line-height: 60px;
+            max-width: 514px;
+            min-height: 120px;
+            color: #000000;
+
+        }
+
+        p {
+            margin: 2.5rem 0 0 19.32%;
+            @extend %Oswald-400;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+
+        &-button {
+            margin: 3.25rem 0 0 19.32%;
+            padding: 14px 26px;
+            @extend %Oswald-400;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            background-color: #68B738;
+            border: none;
+            color: #FFFFFF;
+        }
+    }
+
+
+    &-right-div {
+        position: relative;
+        // min-width: 59%;
+        // left: 50%;
+  
+        ul {
+                margin: 69px 0 0 0;
+                display: flex;
+                justify-content: end;
+
+                li {
+                    padding: 0 35px 0 0;
+                    font-family: 'Oswald';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    // color: #FFFFFF;
+                }
+            }
+
+            &-background {
+               position: absolute;
+               top:0;
+               left: 0;
+               left:50px;
+               z-index: -3;
+               min-width: 100%;
+            }   
+
+        }
+
+
+}
+    
+
