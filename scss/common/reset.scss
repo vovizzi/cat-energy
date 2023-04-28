@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: clamp(12px, 2vw, 16px);
-    overflow-x: hidden;
     min-width: 280px;
   }
   
@@ -39,3 +38,14 @@ html {
   }
 
 
+  .wrapper {
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+
+  ._container {
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0 10px;
+  }

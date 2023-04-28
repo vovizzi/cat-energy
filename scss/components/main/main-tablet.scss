@@ -1,7 +1,156 @@
 @include tablet {
     main {
-        &-container {
-            max-width: 710px;
+        .main-container {
+            max-width: 728px;
         }
-    }
-}
+
+        .main-howwork {
+            margin: 45px 0 0 0;
+        }
+       
+        .main-strength {
+            display: block;
+           }
+
+        }
+        
+        
+        .main-weight-loss {
+                position: relative;
+                min-width: 100%;
+                min-height: 372px;
+                background: #F2F2F2;
+               
+        
+                &-logo {
+                    margin: 41px 0 39px 0;
+                    display: flex;
+        
+                    &-pic {
+                        margin: 0 0 0 52px;
+                    }
+        
+                    &-text {
+                        display: flex;
+                        align-self: center;
+                        font-size: 36px;
+                        line-height: 36px;
+                        text-transform: uppercase;
+                        margin: 10.87% 0 0 36px;
+        
+                    }
+                }
+        
+                &-banner {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin: 0 0 0 52px;
+                }
+        
+                &-slim {
+                    margin:23px 0 0 52px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                }
+        
+            }
+    
+
+
+        .main-weight-loss {
+            position: relative;
+            min-width: 100%;
+            min-height: 372px;
+            background: #F2F2F2;
+            
+
+            &-logo {
+                margin: 41px 0 39px 0;
+                display: flex;
+
+                &-pic  {
+                    position: absolute;
+                    left:55%;
+                    top: 24.46%;
+                    width: 28.24%;
+                    aspect-ratio: 0.95;
+                    box-shadow: none;
+                }
+
+                &-text {
+                    font-size: 2.25rem;
+                    line-height: 0;
+                    text-transform: uppercase;
+                    margin: 10.87% 0 0 7.34%;
+
+                }
+            }
+
+            &-banner {
+                font-size: 16px;
+                line-height: 24px;
+                max-width: 49.7%;
+                margin: 3.4% 0 0 7.34%;
+            }
+
+            &-slim {
+                margin: 12.9% 0 0 7.34%;
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: uppercase;
+            }
+
+        }
+
+
+            .main-weight-gain {
+                position: relative;
+                min-width: 100%;
+                min-height: 372px;
+                background: #F2F2F2;
+                margin-left: 0;
+
+                &-logo {
+            
+                    margin: 41px 0 39px 0;
+                    display: flex;
+
+                    &-pic  {
+                        position: absolute;
+                        left:55%;
+                        top: 24.46%;
+                        width: 37.85%;
+                        aspect-ratio: 1.35;
+                        box-shadow: none;
+                    }
+
+                    &-text {
+                        font-size: 2.25rem;
+                        line-height: 0;
+                        text-transform: uppercase;
+                        margin: 10.87% 0 0 7.34%;
+
+                    }
+                }
+
+                &-banner {
+                    font-size: 16px;
+                    line-height: 24px;
+                    max-width: 49.7%;
+                    margin: 3.4% 0 0 7.34%;
+                }
+
+                &-slim {
+                    margin: 12.9% 0 0 7.34%;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                }
+
+            }
+
+        }
+        
+
+    

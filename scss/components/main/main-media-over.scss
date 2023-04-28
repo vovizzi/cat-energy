@@ -1,8 +1,58 @@
 // For block "How is this work?"
-@media(max-width:1030px) {
+
+@media(max-width:590px) {
   .main-howwork-block {
-    display: flex;
-    justify-content: space-around;
-    
+  display: flex;
+  justify-content: space-around;
   }
+}
+
+
+@media(max-width:1010px) {
+
+  .main-weight-loss {
+    &-logo {
+      margin: 41px 0 39px 0;
+      
+
+      &-pic {
+          margin: 0 0 0 22px;
+        
+      }
+  }
+
+      &-banner {
+        margin: 0 0 0 22px;
+      
+    }
+
+    &-slim {
+        margin:23px 0 0 22px;
+    }
+  }
+
+  .main-weight-gain {
+    margin-left: 40px;
+
+    &-logo {
+      margin: 41px 0 39px 0;
+      
+
+      &-pic {
+          margin: 0 0 0 22px;
+        
+      }
+  }
+
+      &-banner {
+        margin: 0 0 0 22px;
+    }
+
+    &-slim {
+        margin:23px 0 0 22px;
+    }
+  }
+
+
+  
 }
