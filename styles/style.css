@@ -397,38 +397,6 @@ img {
     display: flex;
   }
   .main-weight-loss-logo-pic {
-    margin: 0 0 0 52px;
-  }
-  .main-weight-loss-logo-text {
-    display: flex;
-    align-self: center;
-    font-size: 36px;
-    line-height: 36px;
-    text-transform: uppercase;
-    margin: 10.87% 0 0 36px;
-  }
-  .main-weight-loss-banner {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 0 0 52px;
-  }
-  .main-weight-loss-slim {
-    margin: 23px 0 0 52px;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-  .main-weight-loss {
-    position: relative;
-    min-width: 100%;
-    min-height: 372px;
-    background: #F2F2F2;
-  }
-  .main-weight-loss-logo {
-    margin: 41px 0 39px 0;
-    display: flex;
-  }
-  .main-weight-loss-logo-pic {
     position: absolute;
     left: 55%;
     top: 24.46%;
@@ -493,6 +461,75 @@ img {
   }
 }
 @media (max-width: 420px) {
+  .main-weight-loss {
+    min-width: 100%;
+    max-height: 266px;
+    background: #F2F2F2;
+  }
+  .main-weight-loss-logo {
+    margin: 41px 0 39px 0;
+    display: flex;
+  }
+  .main-weight-loss-logo-pic {
+    position: static;
+    margin: 0 0 0 52px;
+  }
+  .main-weight-loss-logo-text {
+    display: flex;
+    align-self: center;
+    font-size: 2.25rem;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0 0 0 7.34%;
+  }
+  .main-weight-loss-banner {
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 10px;
+    max-width: 467px;
+  }
+  .main-weight-loss-slim {
+    margin: 23px 0 0 52px;
+    font-size: 1.25rem;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  .main-weight-gain {
+    min-width: 100%;
+    min-height: 372px;
+    background: #F2F2F2;
+    margin-left: 0;
+  }
+  .main-weight-gain-logo {
+    margin: 41px 0 39px 0;
+    display: flex;
+  }
+  .main-weight-gain-logo-pic {
+    position: static;
+    left: 55%;
+    top: 24.46%;
+    width: 37.85%;
+    aspect-ratio: 1.35;
+    box-shadow: none;
+  }
+  .main-weight-gain-logo-text {
+    font-size: 2.25rem;
+    line-height: 0;
+    text-transform: uppercase;
+    margin: 10.87% 0 0 7.34%;
+  }
+  .main-weight-gain-banner {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 49.7%;
+    margin: 3.4% 0 0 7.34%;
+  }
+  .main-weight-gain-slim {
+    margin: 12.9% 0 0 7.34%;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
   .main-howwork {
     margin: 27px 0 0 0;
   }
