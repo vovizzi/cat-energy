@@ -2,103 +2,13 @@
     display: flex;
     position: relative;
     max-width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
 
 
-    &-container {
-        display: flex;
-        min-height: 696px;
-        
-    }
-
-    &-left-div {
-        margin: 53px 0 0 0;
-        min-width: 42.36%;
 
 
-        h1 {
-            margin: 6.9375rem 0 0 19.32%;
-            @extend %Oswald-400;
-            font-size: 3.75rem;
-            line-height: 60px;
-            min-width: 414px;
-            min-height: 120px;
-            color: #000000;
 
-        }
-
-        p {
-            margin: 2.5rem 0 0 19.32%;
-            @extend %Oswald-400;
-            font-size: 20px;
-            line-height: 20px;
-            text-transform: uppercase;
-        }
-
-        &-button {
-            margin: 3.25rem 0 0 19.32%;
-            padding: 14px 26px;
-            @extend %Oswald-400;
-            font-size: 20px;
-            line-height: 20px;
-            text-transform: uppercase;
-            background-color: #68B738;
-            border: none;
-            color: #FFFFFF;
-        }
-    }
-
-
-    &-right-div {
-        position: relative;
-        min-width: 48vw;
-        z-index: -2;
-        
-
-        
-        ul {
-            display: flex;
-            position: absolute;
-            top: 69px;
-            left: 18.33%;
-            
-            
-                li {
-                    padding: 0 35px 0 0;
-                    font-family: 'Oswald';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1.25rem;
-                    line-height: 30px;
-                    text-transform: uppercase;
-                    color: #FFFFFF;
-                    white-space: nowrap;
-                }
-            }
-            
-            &-background {
-                margin: 0 0 0 50px;
-                top: 0;
-                left:0;
-                position: relative;
-                z-index: -3;
-                max-height: 694px;
-                min-width: 58.064%;
-                
-
-
-                    &-img {
-                       position: absolute;
-                       top: 0;
-                       left:0;
-                       width: 100%;
-                       height: 100%;
-                       object-fit: cover;
-                    }
-             
-                // background: linear-gradient(rgba 0,0,0,0.5, green) ,url(img/index-background-desktop\ 1.jpg);
-              }
-            }   
+  
 
         
 
