@@ -14,17 +14,20 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header-logo _container">
-                <img src="./img/logo-tablet.svg" alt="" class="header-logo-picture">
-                <img src="./img/logo-text-mobile.svg" alt="" class="header-logo-text">
+            <div class="header-container _container">
+                <div class="header-logo ">
+                    <img src="./img/logo-tablet.svg" alt="" class="header-logo-picture">
+                    <img src="./img/logo-text-mobile.svg" alt="" class="header-logo-text">
+                    <nav class="header-nav">
+                        <ul class="header-nav-ul" >
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Каталог продукции</a></li>
+                            <li><a href="">Подбор программы</a></li>
+                        </ul>
+                        <button class="header-nav-button"></button>
+                </nav>
+                </div>
             </div>
-            <nav class="header-nav">
-                <ul class="header-nav-ul" >
-                    <li>Главная</li>
-                    <li>Каталог продукции</li>
-                    <li>Подбор программы</li>
-                </ul>
-            </nav>
         </header>
         
         <main class="main">
@@ -58,7 +61,7 @@
                             <div class="main-howwork-block">
                                     <div class="main-howwork-block-1">
                                         <img src="img/Group 1.svg" alt="">
-                                        <p>Функциональное питание
+                                        <p class="bl-p">Функциональное питание
                                             содержит только полезные
                                             питательные вещества.</p>
                                         <span class="main-howwork-block-1-number">1</span>
@@ -86,7 +89,44 @@
                                     </div>
                             </div>
                     </div>
-            </div>
+                    <div class="main-second-block">
+                        <div class="main-example">
+                            <p class="main-example-life">Живой пример</p>
+                            <p class="main-example-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой 
+                                обычный корм на Cat Energy Slim. Отличный результат 
+                                без изнуряющих тренировок! При этом он не менял своих 
+                                привычек и по-прежнему спит по 16 часов в день. </p> 
+                                <div class="main-example-flex">
+                                    <div class="main-example-features">
+                                            <div class="main-example-weight">
+                                                5 КГ
+                                                <p>снижение веса</p>
+                                            </div>
+                                            <div class="main-example-days">
+                                                60 дней
+                                                <p>затрачено времени</p>
+                                            </div>
+                                    </div>
+                                    <div class="main-example-expenses">
+                                        <p>Затраты на питание:</p>
+                                        <p>15 000 РУБ.</p>
+                                    </div>
+                                </div>
+                            <div class="background-grey"></div> 
+                        </div>
+                        <div class="main-before">
+                            <div class="main-before-pic">
+                                <img class='main-before-pic-fat' src="./img/before-mobile 1.svg"  alt="">
+                            </div>
+                            <div class="main-before-slider">
+                                <p>БЫЛО</p>
+                                <div></div>
+                                <p>СТАЛО</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
         </main>
     </div>
 </body>

@@ -1,9 +1,9 @@
 // For block "How is this work?"
 
-@media(max-width:590px) {
-  .main-howwork-block {
-  display: flex;
-  justify-content: space-around;
+@media(max-width:1099px) {
+  .main-weight-gain-slim {
+    margin:47px 0 0 52px;
+
   }
 }
 
@@ -49,10 +49,28 @@
     }
 
     &-slim {
-        margin:23px 0 0 22px;
+        margin:47px 0 0 22px;
     }
   }
 
 
   
+}
+
+
+@media(max-width:690px) {
+  
+    .bl-p {
+      display: flex;
+      align-self: start;
+    }
+  
+}
+
+
+@media(max-width:590px) {
+  .main-howwork-block {
+  display: flex;
+  justify-content: space-around;
+  }
 }
