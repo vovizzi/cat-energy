@@ -1,0 +1,42 @@
+.footer {
+    min-height:149px;
+    max-width: 100%;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        max-width: 1260px;
+        padding: 0 20px;
+      
+       
+    }
+
+
+    &-logo {
+        min-width:128px;
+        max-height: 24px;
+    }
+
+
+        &-link {
+            :first-child {
+                padding-right: 27px;
+            }
+
+            :last-child {
+                padding-left: 21px;
+            }
+        }
+
+    &-academy {
+        display: flex;
+        align-items: center;
+        min-width: 163px;
+
+        :first-child {
+            padding-right: 22px;
+        }
+    }
+}

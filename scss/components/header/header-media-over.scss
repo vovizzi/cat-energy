@@ -1,0 +1,18 @@
+
+
+//_container for tablet
+@include tablet {
+    ._container {
+        max-width:708px;
+        margin: auto 2.6%;
+    }
+}
+
+
+//_container for mobile 
+@include mobile {
+    ._container {
+        max-width:708px;
+        margin: auto 3.125%;
+    }
+}

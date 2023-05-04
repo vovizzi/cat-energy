@@ -1,7 +1,7 @@
 @include mobile {
 
     .main-container {
-        padding: 0 7px;
+        padding: 0 10px;
     }
 
     .main-weight-loss {
@@ -164,22 +164,175 @@
     ///////////////////////////////////////////////////////////////////
     .main-example {
             position: relative;
+            // overflow: auto;
             margin: 42px 0 0 0;
             
 
             &-life {
+                display: block;
                 margin: 27px 0 0 0;
             }
 
             &-text {
                 margin: 33px 0 0 0;
             }
+
+            &-features {
+                display: flex;
+                justify-content: center;
+                margin: 9% 0 0 0;
+            }
+
+            &-flex {
+                display: block;
+            }
+
+            &-weight{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 124px;
+                height: 64px;
+                border: 1.5px solid #CDCDCD; 
+                border-radius: 3.49%;
+                font-size: 24px;
+                line-height: 37px;
+    
+                p{
+                    position: absolute;
+                    text-align: center;
+                    right: 20px;
+                    top: 50px;
+                    width:80px;
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    background-color: #EAEAEA;
+                   
+                }
+            }
+    
+            &-days{
+                margin: 0 0 0 31px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 124px;
+                height: 64px;
+                border: 1.5px solid #CDCDCD; 
+                border-radius: 3.49%;
+                font-size: 24px;
+                line-height: 37px;
+    
+                p{
+                    position: absolute;
+                    text-align: center;
+                    right: 20px;
+                    top: 50px;
+                    width:80px;
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    background-color: #EAEAEA;
+                }
+            }
+
+            &-expenses {
+                display: flex;
+                justify-content: center;
+                margin: 30px 0 0 0;
+                min-height: 40px;
+
+
+                p {
+                    line-height: 20px;
+                }
+              
+                :last-child{
+                    display: flex;
+                    justify-content: end;
+                    margin: 0 0 0 3px;
+                }
+            }
 }
 
-    .background-grey {
-        height: 762px;
-        top:0;
+    
+        .main-before {
+            top: 10px;
+            left: 0%;
+            width: 100%;
+            height: 100%;
 
+            &-pic {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                // aspect-ratio: 1.5;
+            }
+
+            &-slider {
+                display: flex;
+                justify-content: center;
+                margin: 30px 0 0 0;
+
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+    
+                :first-child {
+                    margin-left: 0px;
+                }
+    
+                :last-child {
+                    margin-left: 28%;
+                }
+            }
+        }
+    
+
+    .background-grey {
+        top:0;
+        background-color: #EAEAEA;
+
+    }
+
+
+    .main-section {
+
+        &-adress {
+            min-height: 114px;
+
+            &-1 {
+                max-width:43.75%;
+                p {
+                    font-size: 1.35rem;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                }
+            }
+
+            &-2 {
+                max-width: 43.75%;
+                p {
+                    font-size: 1.2rem;
+                    line-height: 20px;
+                    color: #444444;
+                    text-align: right;
+                }
+
+                :last-child {
+                    margin:0px 0 0 0;
+                }
+            }
+        }
     }
 
 }
