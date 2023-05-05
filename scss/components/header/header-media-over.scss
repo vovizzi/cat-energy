@@ -3,7 +3,7 @@
 //_container for tablet
 @include tablet {
     ._container {
-        max-width:708px;
+        // max-width:708px;
         margin: auto 2.6%;
     }
 }
@@ -12,7 +12,27 @@
 //_container for mobile 
 @include mobile {
     ._container {
-        max-width:708px;
         margin: auto 3.125%;
     }
 }
+
+
+
+// @media (max-width: 320px) {
+
+//     .header-logo-pic {
+//         min-width: 100%;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         :first-child {
+//             margin: 0 20px 0 0;
+//         }
+
+//     }
+
+//     .header-nav-button {
+//         padding-left:10px;
+//     }
+// }

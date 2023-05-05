@@ -1,0 +1,104 @@
+@include mobile {
+    .header {
+        &-logo {
+            display: flex;
+            flex-direction: column;
+            margin: 4px 0 0 0;
+
+            &-pic {
+                min-width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                :first-child {
+                    margin: 0 55px 0 0;
+                }
+
+                &-add {
+                    display: flex;
+                }
+            }
+
+            &-text {
+                margin: 0 0 0 0;
+    
+            }
+        }
+
+        &-nav {
+            // margin: 0 0 0 44.5%;
+            display: flex;
+            justify-content: center;
+  
+            min-width: 100%;
+            
+            &-ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+              
+                :first-child {
+                    border-bottom: none;
+                }
+    
+                :last-child {
+                    padding-right: 0px;
+                    border-top: none;
+                }
+    
+                li {
+                    font-family: 'Oswald';
+                    font-style: normal;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 66px;
+                    min-width:100vw;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    color: black;
+                    padding-right: 0;
+                    // padding-left: 6px;
+                    border-top: 2px solid #E6E6E6;
+                    border-bottom: 2px solid #E6E6E6;
+                    // margin-top: 46px;
+
+
+                }
+            }
+
+
+    
+            &-button {
+                width:16px;
+                height: 16px;
+                display: block;
+            }
+
+    }
+
+}
+
+}
+
+
+@media (max-width: 319px) {
+
+    .header-logo-pic {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        :first-child {
+            margin: 0 35px 0 0;
+        }
+
+    }
+
+}

@@ -1,15 +1,24 @@
 .header {
     
-    position: relative;
+    // position: relative;
     max-width: 100%;
 
    
 
     &-logo {
-        margin: 53px 0 0 0;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-      
+        margin: 53px 0 0 0;
+        min-width: 100%;
+
+        &-pic {
+        display: flex;
+
+            &-add {
+                display: flex;
+            }
+        }
 
         &-text {
             display: flex;
@@ -20,11 +29,12 @@
     }
 
     &-nav {
-        margin: 0 0 0 44.5%;
+        // margin: 0 0 0 44.5%;
         
         &-ul {
             display: flex;
-            flex-wrap: wrap;
+            margin-top: 5px;
+          
 
 
             :last-child {

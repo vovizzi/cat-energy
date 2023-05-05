@@ -1,0 +1,46 @@
+
+@include mobile {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 236px;
+        margin: auto 3.125%;
+    
+
+    &-logo {
+        margin: 39px 0 0 0;
+    }
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 32px 0 0 0;
+        min-width: 100%;
+        min-height: 63px;
+        border-top: 2px solid #D9D9D9;
+        border-bottom: 2px solid #D9D9D9;
+    }
+
+    &-academy {
+        display: flex;
+        justify-content: space-between;
+        min-width: 100%;
+        max-height: 36px;
+        margin: 22px 0 0 0;
+        padding-bottom: 22px;
+
+        :first-child{
+            font-size: 1.33rem;
+        }
+    }
+
+    
+
+}
+
+
+}
+
+

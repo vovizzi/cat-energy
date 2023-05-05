@@ -1,0 +1,22 @@
+
+@include tablet {
+
+    .header-nav {
+     
+        
+        &-ul {
+          
+            margin-top: 3px;
+        
+    
+            li {
+               
+                font-size: 18px;
+                line-height: 30px;
+                
+            }
+        }
+    
+    }
+
+}

@@ -1,18 +1,14 @@
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     min-height:149px;
-    max-width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 20px;
+   
 
-    &-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 55px auto 0 auto;
-      
-        max-width: 1260px;
-        padding: 0 20px;
-      
-       
-    }
+
 
 
     &-logo {
@@ -22,13 +18,14 @@
 
 
         &-link {
-            :first-child {
+            
+            &-vk {
                 padding-right: 27px;
             }
 
-            :last-child {
-                padding-left: 21px;
-            }
+            &-face {
+                    padding-left: 21px;
+                }
         }
 
     &-academy {
