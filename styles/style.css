@@ -58,6 +58,15 @@ img {
   font-weight: 400;
 }
 
+.burger::after, .burger::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s ease 0s;
+}
+
 .header {
   max-width: 100%;
 }
@@ -97,6 +106,41 @@ img {
   display: none;
 }
 
+.burger {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  width: 30px;
+  height: 18px;
+}
+.burger span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: black;
+  margin: 0;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+
+.active span {
+  transform: scale(0);
+}
+.active::before {
+  top: 50%;
+  transform: rotate(-42deg) translate(0, -50%);
+}
+.active::after {
+  top: 50%;
+  transform: rotate(42deg) translate(0, 50%);
+}
+
 @media (max-width: 1090px) {
   ._container {
     margin: auto 2.6%;
@@ -120,19 +164,20 @@ img {
   .header-logo {
     display: flex;
     flex-direction: column;
-    margin: 4px 0 0 0;
+    margin: 1px 0 0 0;
   }
   .header-logo-pic {
     min-width: 100%;
+    min-height: 66px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .header-logo-pic :first-child {
-    margin: 0 55px 0 0;
-  }
   .header-logo-pic-add {
     display: flex;
+  }
+  .header-logo-picture {
+    margin: 0 55px 0 0;
   }
   .header-logo-text {
     margin: 0 0 0 0;
@@ -173,10 +218,8 @@ img {
     border-top: 2px solid #E6E6E6;
     border-bottom: 2px solid #E6E6E6;
   }
-  .header-nav-button {
-    width: 16px;
-    height: 16px;
-    display: block;
+  .burger {
+    display: flex;
   }
 }
 @media (max-width: 319px) {
@@ -186,7 +229,7 @@ img {
     justify-content: space-between;
     align-items: center;
   }
-  .header-logo-pic :first-child {
+  .header-logo-picture {
     margin: 0 35px 0 0;
   }
 }

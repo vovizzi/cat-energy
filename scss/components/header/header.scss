@@ -15,9 +15,9 @@
         &-pic {
         display: flex;
 
-            &-add {
-                display: flex;
-            }
+        &-add {
+            display: flex;
+        }
         }
 
         &-text {
@@ -55,9 +55,52 @@
             display: none;
         }
     }
-
-
-
 }
+
+.burger {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index:5;
+    width: 30px;
+    height: 18px;
+    
+     span {
+        // position: absolute;
+      height: 2px;
+      width: 100%; 
+      transform: scale(1);
+      background-color: black;
+      margin: 0;
+    }
+  
+    &::before {
+      @extend %burger; 
+      top:0;
+    }
+    
+    &::after {
+      @extend %burger;
+      bottom: 0;
+    }
+
+  }
+
+  .active {
+    
+    & span {transform: scale(0)}
+    
+    &::before {
+        top:50%;
+        transform: rotate(-42deg) translate(0,-50%);
+      }
+    
+    &::after {
+        top:50%;
+        transform: rotate(42deg) translate(0,50%);
+      }
+
+    }
     
 

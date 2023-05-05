@@ -3,21 +3,23 @@
         &-logo {
             display: flex;
             flex-direction: column;
-            margin: 4px 0 0 0;
+            margin: 1px 0 0 0;
 
             &-pic {
                 min-width: 100%;
+                min-height:66px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                :first-child {
-                    margin: 0 55px 0 0;
-                }
 
                 &-add {
                     display: flex;
                 }
+            }
+
+            &-picture {
+                margin:0 55px 0 0;
             }
 
             &-text {
@@ -26,10 +28,14 @@
             }
         }
 
-        &-nav {
+
+        &-nav  {
             // margin: 0 0 0 44.5%;
             display: flex;
             justify-content: center;
+            
+
+            
   
             min-width: 100%;
             
@@ -72,19 +78,18 @@
                 }
             }
 
-
-    
-            &-button {
-                width:16px;
-                height: 16px;
-                display: block;
-            }
+        }
 
     }
 
+    .burger {
+        display: flex;
+     }
+
+  
 }
 
-}
+
 
 
 @media (max-width: 319px) {
@@ -93,12 +98,13 @@
         min-width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-
-        :first-child {
-            margin: 0 35px 0 0;
-        }
-
+        align-items: center; 
     }
 
+   .header-logo-picture {
+       margin: 0 35px 0 0;
+   }
+
+
 }
+
