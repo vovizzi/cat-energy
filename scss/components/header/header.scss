@@ -1,10 +1,8 @@
 .header {
+  min-height: 643px;
     
     // position: relative;
     max-width: 100%;
-
-   
-
     &-logo {
         display: flex;
         justify-content: space-between;
@@ -46,7 +44,7 @@
                 font-size: 20px;
                 line-height: 30px;
                 text-transform: uppercase;
-                color: black;
+                color: #FFFFFF;
                 padding-right: 35px;
             }
         }
@@ -55,6 +53,78 @@
             display: none;
         }
     }
+
+    &-information {
+      display: flex;
+      margin: 111px 0 0 6.5%;
+
+      &-text {
+          &-first {
+            @extend %Oswald-400;
+            font-size: 3.75rem;
+            line-height: 60px;
+            max-width: 420px;
+          }
+          &-second {
+            margin: 40px 0 0 0;
+            @extend %Oswald-400;
+            font-size: 1.25rem;
+            line-height: 20px;
+            text-transform: uppercase;
+          }
+      }
+
+      &-button {
+        margin: 52px 0 0 0;
+        min-width:244px;
+        min-height: 54px;
+        background-color: #68B738;
+        color: #FFFFFF;
+        @extend %Oswald-400;
+        font-size: 20px;
+        line-height: 20px;
+        border:none;
+        text-transform: uppercase;
+      }
+
+      &-picture {
+        position: absolute;
+        top:0;
+        right:0;
+        min-width: 50%;
+        max-height: 694px;
+        z-index: -2;
+        background: rgba(104, 183, 56);
+        
+        &-img {
+          opacity: 0.15;
+          min-width: 100%;
+          max-height: 694px;
+          object-fit: cover;
+        }
+   
+
+
+      }
+    }
+
+    &-box-picture {
+      max-width:100%;
+      position:absolute;
+      top: 141px;
+      left:38.75%;
+      // right:30%;
+      z-index: -1;
+      // object-fit: cover;
+    }
+
+
+
+}
+
+.papa {
+  min-width: 60%;
+  min-height:694px;
 }
 
 .burger {

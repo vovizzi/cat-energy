@@ -28,23 +28,27 @@
             }
         }
 
+        .nav.open {
+            display: flex;
+            justify-content: center;
+            min-width: 100%;
+        }
 
         &-nav  {
             // margin: 0 0 0 44.5%;
-            display: flex;
-            justify-content: center;
-            
 
+            ul {
+                display: none;
+            }
+         
             
-  
-            min-width: 100%;
-            
-            &-ul {
+            &.open ul {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 margin-top: 5px;
+                background-color: #FFFFFF;
               
                 :first-child {
                     border-bottom: none;
@@ -92,7 +96,7 @@
 
 
 
-@media (max-width: 319px) {
+@media (max-width: 310px) {
 
     .header-logo-pic {
         min-width: 100%;

@@ -18,13 +18,13 @@ window.addEventListener("resize", windowSize)
 window.addEventListener("load", windowSize())
 
 
-// document.querySelector('.burger').addEventListener('click',function() {
-//   this.classList.toggle('active')
-//   document.querySelector('.header-nav').classList.toggle('.open')
-// })
-
-
 document.querySelector('.burger').addEventListener('click',function() {
   this.classList.toggle('active')
-  document.querySelector('.header-nav').remove()
+  document.querySelector('.header-nav').classList.toggle('open')
 })
+
+
+// document.querySelector('.burger').addEventListener('click',function() {
+//   this.classList.toggle('active')
+//   document.querySelector('.header-nav').remove()
+// })

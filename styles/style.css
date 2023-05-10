@@ -52,7 +52,7 @@ img {
   padding: 0 20px;
 }
 
-.main-section-adress-1 p, .main-before-slider p, .main-example-expenses p, .main-example-days, .main-example-weight, .main-example-life, .main-howwork-block-4-number, .main-howwork-block-3-number, .main-howwork-block-2-number, .main-howwork-block-1-number, .main-howwork-text, .main-weight-gain-slim, .main-weight-gain-logo-text, .main-weight-loss-slim, .main-weight-loss-logo-text, .header-nav-ul li {
+.main-section-adress-1 p, .main-before-slider p, .main-example-expenses p, .main-example-days, .main-example-weight, .main-example-life, .main-howwork-block-4-number, .main-howwork-block-3-number, .main-howwork-block-2-number, .main-howwork-block-1-number, .main-howwork-text, .main-weight-gain-slim, .main-weight-gain-logo-text, .main-weight-loss-slim, .main-weight-loss-logo-text, .header-information-button, .header-information-text-second, .header-information-text-first, .header-nav-ul li {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -68,6 +68,7 @@ img {
 }
 
 .header {
+  min-height: 643px;
   max-width: 100%;
 }
 .header-logo {
@@ -99,11 +100,64 @@ img {
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
-  color: black;
+  color: #FFFFFF;
   padding-right: 35px;
 }
 .header-nav-button {
   display: none;
+}
+.header-information {
+  display: flex;
+  margin: 111px 0 0 6.5%;
+}
+.header-information-text-first {
+  font-size: 3.75rem;
+  line-height: 60px;
+  max-width: 420px;
+}
+.header-information-text-second {
+  margin: 40px 0 0 0;
+  font-size: 1.25rem;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.header-information-button {
+  margin: 52px 0 0 0;
+  min-width: 244px;
+  min-height: 54px;
+  background-color: #68B738;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  text-transform: uppercase;
+}
+.header-information-picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 50%;
+  max-height: 694px;
+  z-index: -2;
+  background: rgb(104, 183, 56);
+}
+.header-information-picture-img {
+  opacity: 0.15;
+  min-width: 100%;
+  max-height: 694px;
+  object-fit: cover;
+}
+.header-box-picture {
+  max-width: 100%;
+  position: absolute;
+  top: 141px;
+  left: 38.75%;
+  z-index: -1;
+}
+
+.papa {
+  min-width: 60%;
+  min-height: 694px;
 }
 
 .burger {
@@ -159,6 +213,18 @@ img {
     font-size: 18px;
     line-height: 30px;
   }
+  .header-information {
+    margin: 62px 0 0 6.5%;
+  }
+  .header-information-picture {
+    display: none;
+  }
+  .header-box-picture {
+    min-width: 709px;
+    min-height: 609px;
+    top: 401px;
+    left: 4%;
+  }
 }
 @media (max-width: 767px) {
   .header-logo {
@@ -182,26 +248,30 @@ img {
   .header-logo-text {
     margin: 0 0 0 0;
   }
-  .header-nav {
+  .header .nav.open {
     display: flex;
     justify-content: center;
     min-width: 100%;
   }
-  .header-nav-ul {
+  .header-nav ul {
+    display: none;
+  }
+  .header-nav.open ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 5px;
+    background-color: #FFFFFF;
   }
-  .header-nav-ul :first-child {
+  .header-nav.open ul :first-child {
     border-bottom: none;
   }
-  .header-nav-ul :last-child {
+  .header-nav.open ul :last-child {
     padding-right: 0px;
     border-top: none;
   }
-  .header-nav-ul li {
+  .header-nav.open ul li {
     font-family: "Oswald";
     font-style: normal;
     font-weight: 500;
@@ -222,7 +292,7 @@ img {
     display: flex;
   }
 }
-@media (max-width: 319px) {
+@media (max-width: 310px) {
   .header-logo-pic {
     min-width: 100%;
     display: flex;
