@@ -90,6 +90,33 @@
         display: flex;
      }
 
+
+     .header {
+        &-information {
+            margin: 0 0 0 0;
+            display: block;
+
+            &-picture {
+               display: flex;
+                position: relative;
+                min-width: 100vw;
+                max-height: 302px;
+
+                &-img {
+                    display: flex;
+                    justify-content: center;
+                    max-height: 302px;
+                }
+            }
+
+        }
+     }
+
+
+     .header-box-picture {
+        display: none;
+     }
+
   
 }
 

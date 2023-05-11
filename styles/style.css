@@ -206,6 +206,9 @@ img {
   }
 }
 @media (max-width: 1090px) {
+  .header {
+    min-height: 900px;
+  }
   .header-nav-ul {
     margin-top: 3px;
   }
@@ -213,8 +216,11 @@ img {
     font-size: 18px;
     line-height: 30px;
   }
+  .header-nav-ul li {
+    color: #000000;
+  }
   .header-information {
-    margin: 62px 0 0 6.5%;
+    margin: 64px 0 0 11.5%;
   }
   .header-information-picture {
     display: none;
@@ -222,8 +228,8 @@ img {
   .header-box-picture {
     min-width: 709px;
     min-height: 609px;
-    top: 401px;
-    left: 15%;
+    top: 370px;
+    left: 8%;
   }
 }
 @media (max-width: 767px) {
@@ -290,6 +296,24 @@ img {
   }
   .burger {
     display: flex;
+  }
+  .header-information {
+    margin: 0 0 0 0;
+    display: block;
+  }
+  .header-information-picture {
+    display: flex;
+    position: relative;
+    min-width: 100vw;
+    max-height: 302px;
+  }
+  .header-information-picture-img {
+    display: flex;
+    justify-content: center;
+    max-height: 302px;
+  }
+  .header-box-picture {
+    display: none;
   }
 }
 @media (max-width: 310px) {

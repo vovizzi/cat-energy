@@ -1,6 +1,10 @@
 
 @include tablet {
 
+    .header {
+        min-height: 900px;
+    }
+
     .header-nav {
      
         
@@ -19,8 +23,14 @@
     
     }
 
+    .header-nav-ul {
+        li {
+            color: #000000;
+        }
+    }
+
     .header-information {
-        margin: 62px 0 0 6.5%;
+        margin: 64px 0 0 11.5%;
     }
 
     .header-information-picture {
@@ -30,8 +40,10 @@
     .header-box-picture {
         min-width: 709px;
         min-height: 609px;
-        top: 401px;
-        left: 15%;
+        top: 370px;
+        left: 8%;
     }
+
+
 
 }
