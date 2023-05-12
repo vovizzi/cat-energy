@@ -1,5 +1,6 @@
 @include mobile {
     .header {
+        min-height: 280px;
         &-logo {
             display: flex;
             flex-direction: column;
@@ -91,30 +92,105 @@
      }
 
 
+     .header-information-picture-center {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background-color: #68B738;
+        min-width: 120vw;
+        margin-left:-50px;
+        z-index: 0;
+        // opacity: 0.85;
+        
+     }
+
      .header {
         &-information {
             margin: 0 0 0 0;
             display: block;
+            display: flex;
+            justify-content: center;
+            position: relative;
 
             &-picture {
                display: flex;
                 position: relative;
-                min-width: 100vw;
+                left:25px;
+                min-width: 320px;
                 max-height: 302px;
+                opacity: 85%;
+                // background: none;
 
-                &-img {
-                    display: flex;
-                    justify-content: center;
-                    max-height: 302px;
+                &-img{
+                    display: none;
                 }
+
+                &-img2 {
+                   
+                    display: flex;
+                    max-height: 302px;
+                    max-width: 100%;
+                    
+                    opacity: 0.15;
+                }
+
+              
             }
+
+            &-text {
+                position: absolute;
+                text-align: center;
+                top:27px;
+                
+
+                &-first {
+                    font-size: 3rem;
+                    line-height: 100%;
+                    max-width: 320px;
+                    color: #FFFFFF;
+                  }
+                  &-second {
+                    margin: 25px 0 0 0;
+                    font-size: 1.25rem;
+                    line-height: 20px;
+                  
+                    color: #FFFFFF;
+                  }
+            }
+
+            &-button {
+                position: relative;
+                top: 250px;
+                min-width:100%;
+                margin: 5px 0 5px 0;
+               
+              }
 
         }
      }
 
 
+     .header-box-picture-div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        min-width: 112%;
+        // min-height: 270px;
+        margin-left:-50px;
+     
+        
+     }
+
      .header-box-picture {
-        display: none;
+        padding-left: 30px;
+        margin: -145px 0px 0 0;
+        position: static;
+        display: flex;
+        justify-content: center;
+        max-width: 280px;
+        height: 270px;
+        z-index:0;
      }
 
   

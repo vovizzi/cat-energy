@@ -9,9 +9,7 @@
      
         
         &-ul {
-          
             margin-top: 3px;
-        
     
             li {
                
@@ -38,8 +36,8 @@
     }
 
     .header-box-picture {
-        min-width: 709px;
-        min-height: 609px;
+        max-width: 709px;
+        max-height: 609px;
         top: 370px;
         left: 8%;
     }

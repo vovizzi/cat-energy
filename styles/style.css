@@ -147,6 +147,9 @@ img {
   max-height: 694px;
   object-fit: cover;
 }
+.header-information-picture-img2 {
+  display: none;
+}
 .header-box-picture {
   max-width: 100%;
   position: absolute;
@@ -226,13 +229,16 @@ img {
     display: none;
   }
   .header-box-picture {
-    min-width: 709px;
-    min-height: 609px;
+    max-width: 709px;
+    max-height: 609px;
     top: 370px;
     left: 8%;
   }
 }
 @media (max-width: 767px) {
+  .header {
+    min-height: 280px;
+  }
   .header-logo {
     display: flex;
     flex-direction: column;
@@ -297,23 +303,79 @@ img {
   .burger {
     display: flex;
   }
+  .header-information-picture-center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #68B738;
+    min-width: 120vw;
+    margin-left: -50px;
+    z-index: 0;
+  }
   .header-information {
     margin: 0 0 0 0;
     display: block;
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
   .header-information-picture {
     display: flex;
     position: relative;
-    min-width: 100vw;
+    left: 25px;
+    min-width: 320px;
     max-height: 302px;
+    opacity: 85%;
   }
   .header-information-picture-img {
+    display: none;
+  }
+  .header-information-picture-img2 {
+    display: flex;
+    max-height: 302px;
+    max-width: 100%;
+    opacity: 0.15;
+  }
+  .header-information-text {
+    position: absolute;
+    text-align: center;
+    top: 27px;
+  }
+  .header-information-text-first {
+    font-size: 3rem;
+    line-height: 100%;
+    max-width: 320px;
+    color: #FFFFFF;
+  }
+  .header-information-text-second {
+    margin: 25px 0 0 0;
+    font-size: 1.25rem;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  .header-information-button {
+    position: relative;
+    top: 250px;
+    min-width: 100%;
+    margin: 5px 0 5px 0;
+  }
+  .header-box-picture-div {
     display: flex;
     justify-content: center;
-    max-height: 302px;
+    text-align: center;
+    position: relative;
+    min-width: 112%;
+    margin-left: -50px;
   }
   .header-box-picture {
-    display: none;
+    padding-left: 30px;
+    margin: -145px 0px 0 0;
+    position: static;
+    display: flex;
+    justify-content: center;
+    max-width: 280px;
+    height: 270px;
+    z-index: 0;
   }
 }
 @media (max-width: 310px) {
