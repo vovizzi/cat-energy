@@ -2,7 +2,16 @@
     max-width: 100%;
     margin: 82px 0 0 0;
 
-
+    &-information-button {
+        display: none;
+        background-color: #68B738;
+        color: #FFFFFF;
+        @extend %Oswald-400;
+        font-size: 20px;
+        line-height: 20px;
+        border:none;
+        text-transform: uppercase;
+    }
 
    &-container {
     // display: flex;

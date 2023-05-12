@@ -52,7 +52,7 @@ img {
   padding: 0 20px;
 }
 
-.main-section-adress-1 p, .main-before-slider p, .main-example-expenses p, .main-example-days, .main-example-weight, .main-example-life, .main-howwork-block-4-number, .main-howwork-block-3-number, .main-howwork-block-2-number, .main-howwork-block-1-number, .main-howwork-text, .main-weight-gain-slim, .main-weight-gain-logo-text, .main-weight-loss-slim, .main-weight-loss-logo-text, .header-information-button, .header-information-text-second, .header-information-text-first, .header-nav-ul li {
+.main-section-adress-1 p, .main-before-slider p, .main-example-expenses p, .main-example-days, .main-example-weight, .main-example-life, .main-howwork-block-4-number, .main-howwork-block-3-number, .main-howwork-block-2-number, .main-howwork-block-1-number, .main-howwork-text, .main-weight-gain-slim, .main-weight-gain-logo-text, .main-weight-loss-slim, .main-weight-loss-logo-text, .main-information-button, .header-information-button, .header-information-text-second, .header-information-text-first, .header-nav-ul li {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -325,7 +325,6 @@ img {
     left: 25px;
     min-width: 320px;
     max-height: 302px;
-    opacity: 85%;
   }
   .header-information-picture-img {
     display: none;
@@ -354,9 +353,11 @@ img {
     color: #FFFFFF;
   }
   .header-information-button {
+    display: none;
     position: relative;
     top: 250px;
-    min-width: 100%;
+    max-width: 100%;
+    min-width: 280px;
     margin: 5px 0 5px 0;
   }
   .header-box-picture-div {
@@ -392,6 +393,15 @@ img {
 .main {
   max-width: 100%;
   margin: 82px 0 0 0;
+}
+.main-information-button {
+  display: none;
+  background-color: #68B738;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  text-transform: uppercase;
 }
 .main-strength {
   display: flex;
@@ -966,8 +976,17 @@ img {
   }
 }
 @media (max-width: 767px) {
+  .main {
+    margin: 0 0 0 0;
+  }
   .main-container {
     padding: 0 10px;
+  }
+  .main-information-button {
+    display: block;
+    min-width: 100%;
+    min-height: 54px;
+    margin: 0 0 22px 0;
   }
   .main-weight-loss {
     overflow: auto;

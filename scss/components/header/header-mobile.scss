@@ -118,15 +118,14 @@
                 left:25px;
                 min-width: 320px;
                 max-height: 302px;
-                opacity: 85%;
-                // background: none;
+                // opacity: 85%;
+          
 
                 &-img{
                     display: none;
                 }
 
                 &-img2 {
-                   
                     display: flex;
                     max-height: 302px;
                     max-width: 100%;
@@ -159,9 +158,11 @@
             }
 
             &-button {
+                display: none;
                 position: relative;
                 top: 250px;
-                min-width:100%;
+                max-width: 100%;
+                min-width:280px;
                 margin: 5px 0 5px 0;
                
               }
